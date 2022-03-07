@@ -18,4 +18,8 @@ brain-games: # Run <brain-games> module
 	poetry run brain-games
 	
 
+lint: # Check code with Flake8
+	poetry run flake8 brain_games
+
+
 .PHONY: install test lint selfcheck check build
