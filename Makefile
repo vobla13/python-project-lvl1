@@ -16,7 +16,11 @@ package-install: # Runs <python3 -m pip install --user dist/*.whl>
 
 brain-games: # Run <brain-games> module
 	poetry run brain-games
-	
+
+
+brain-even: # Run <brain-games> module
+	poetry run brain-even
+
 
 lint: # Check code with Flake8
 	poetry run flake8 brain_games
