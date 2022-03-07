@@ -20,7 +20,8 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Update and Upgrade
-        run: python -m pip install --upgrade pip
+        run: |
+        /opt/hostedtoolcache/Python/3.9.10/x64/bin/python -m pip install --upgrade pip
         # make depends on poetry
       - name: Install dependencies
         run: |
